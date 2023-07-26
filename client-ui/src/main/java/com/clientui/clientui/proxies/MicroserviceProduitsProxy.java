@@ -10,12 +10,15 @@ import java.util.List;
 
 
 
-@FeignClient(name = "microservice-produits", url = "localhost:9001")
+@FeignClient(name = "microservice-produits", url = "localhost:9001/produits")
 public interface MicroserviceProduitsProxy {
     @GetMapping(value = "/Produits")
     List<ProductBean> listeDesProduits();
 
     @GetMapping( value = "/Produits/{id}")
     ProductBean recupererUnProduit(@PathVariable("id") int id);
+
+    @GetMapping( value = "/ProduitsTest")
+    String testUnProduit();
 
 }
