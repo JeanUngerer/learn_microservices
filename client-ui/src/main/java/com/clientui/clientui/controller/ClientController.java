@@ -19,8 +19,8 @@ public class ClientController {
 
     @RequestMapping("/")
     public String accueil(Model model){
-        //List<ProductBean> produits =  produitsProxy.listeDesProduits();
-        List<ProductBean> produits = new ArrayList<>();
+        List<ProductBean> produits =  produitsProxy.listeDesProduits();
+        //List<ProductBean> produits = new ArrayList<>();
         model.addAttribute("produits", produits);
         String test = produitsProxy.testUnProduit();
         model.addAttribute("test", test);

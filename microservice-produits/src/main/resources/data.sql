@@ -1,3 +1,4 @@
+
 INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (0, 'Bougie fonctionnant au feu', 'bougie qui fonctionne comme une ampoule mais sans électricité !', 'https://github.com/OpenClassrooms-Student-Center/4668216-Optimisez-votre-architecture-Microservices/blob/master/images/Bougie.PNG?raw=true', 22.0);
 
 INSERT INTO PRODUCT (ID , TITRE ,DESCRIPTION ,IMAGE ,PRIX ) VALUES (1, 'Chaise pour s''assoire', 'Chaise rare avec non pas 1 ni 2 mais 3 pieds', 'https://github.com/OpenClassrooms-Student-Center/4668216-Optimisez-votre-architecture-Microservices/blob/master/images/Chaise.PNG?raw=true', 95.0);
