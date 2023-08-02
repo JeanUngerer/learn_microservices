@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mproduits" />
         <module name="config-server" />
+        <module name="mApiGateway" />
+        <module name="client-ui" />
+        <module name="mproduits" />
         <module name="mpaiement" />
         <module name="mcommandes" />
         <module name="eureka-server" />
-        <module name="client-ui" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="clientui" target="17" />
       <module name="config-server" target="17" />
       <module name="eureka-server" target="17" />
+      <module name="mApiGateway" target="17" />
       <module name="mcommandes" target="1.8" />
       <module name="mpaiement" target="1.8" />
       <module name="mproduits" target="11" />
@@ -30,6 +32,7 @@
       <module name="clientui" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="mApiGateway" options="-parameters" />
       <module name="mcommandes" options="-parameters" />
       <module name="mpaiement" options="-parameters" />
       <module name="mproduits" options="-parameters" />

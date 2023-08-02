@@ -13,7 +13,7 @@ import java.util.List;
 public class ClientController {
     private final MicroserviceProduitsProxy produitsProxy;
 
-    public ClientController(MicroserviceProduitsProxy produitsProxy){
+    public ClientController(MicroserviceProduitsProxy produitsProxy) {
         this.produitsProxy = produitsProxy;
     }
 

@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learn_microservices.iml" filepath="$PROJECT_DIR$/.idea/learn_microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mApiGateway/mApiGateway.iml" filepath="$PROJECT_DIR$/mApiGateway/mApiGateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-commandes/mcommandes.iml" filepath="$PROJECT_DIR$/microservice-commandes/mcommandes.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-paiement/mpaiement.iml" filepath="$PROJECT_DIR$/microservice-paiement/mpaiement.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-produits/mproduits.iml" filepath="$PROJECT_DIR$/microservice-produits/mproduits.iml" />
