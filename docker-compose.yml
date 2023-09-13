@@ -3,39 +3,39 @@ version: '3.1'
 
 services:
   app-config:
-    image: config-demo
+    image: config_container_learn_microservices
     restart: always
     ports:
       - 9101:9101
 
   app-client:
-    image: client-demo
+    image: client_container_learn_microservices
     restart: always
     ports:
       - 8080:8080
 
   app-eureka:
-    image: paymybuddy-demo
+    image: eureka_container_learn_microservices
     restart: always
     ports:
-      - 8090:8090
+      - 9102:9102
     depends_on:
       - "app-config"
 
   app-gateway:
-    image: gateway-demo
+    image: gateway_container_learn_microservices
     restart: always
     ports:
-      - 8090:8090
+      - 9004:9004
     depends_on:
       - "app-config"
       - "app-eureka"
 
   app-produits:
-    image: produits-demo
+    image: produits_container_learn_microservices
     restart: always
     ports:
-      - 8090:8090
+      - 9001:9001
     depends_on:
       - "app-config"
       - "app-eureka"
