@@ -62,13 +62,14 @@ public class UserService implements ReactiveUserDetailsService {
             log.info("create user - userDTO: " + myUser.toString());
 
             myUser.setPassword(passwordEncoder.encode(myUser.getPassword()));
+            myUser.setUserId(null);
 
-            userRepository.save(userMapper.modelToEntity(myUser));
+            userRepository.insert(userMapper.modelToEntity(myUser));
             myUser = userMapper.entityToModel(userRepository.findByUserName(myUser.getUserName()).get());
             return myUser;
         } catch (Exception e) {
             log.error("Couldn't create user: " + e.getMessage());
-            throw new ExceptionHandler("We could not create your account");
+            throw new ExceptionHandler("We could not create your account ;; " + e);
         }
     }
 

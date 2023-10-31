@@ -18,7 +18,7 @@ import java.util.List;
 public class UserEntity {
 
     @Id
-    Long userId;
+    String userId;
 
 
     String email;

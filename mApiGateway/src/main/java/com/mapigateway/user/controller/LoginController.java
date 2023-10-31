@@ -45,5 +45,8 @@ public class LoginController {
         return "Hi home !";
     }
 
-
+    @GetMapping("/secured")
+    public String homeSecuredHome(){
+        return "Hi secured home !";
+    }
 }

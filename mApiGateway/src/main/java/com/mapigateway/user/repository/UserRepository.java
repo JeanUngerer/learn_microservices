@@ -9,7 +9,7 @@ import java.util.Optional;
 
 
 @Repository
-public interface UserRepository extends ReactiveMongoRepository<UserEntity, Long> {
+public interface UserRepository extends ReactiveMongoRepository<UserEntity, String> {
     Optional<UserEntity> findByEmail(String email);
 
     Optional<UserEntity> findByUserName(String userName);
